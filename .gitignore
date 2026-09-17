@@ -129,11 +129,12 @@ dmypy.json
 .pyre/
 
 # data
-data/curated/*
-data/landing/*
-data/tables/*
-data/transactions/*
-data/raw/*
+data/curated/
+data/landing/
+data/tables/
+data/transactions/
+data/raw/
+data/**/*.crc
 data/*.zip
 
 scripts/__pycache__/
