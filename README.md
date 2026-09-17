@@ -15,4 +15,5 @@ Files should be run in the order described below.
 1. `01_consumers_preprocess.ipynb` - preprocesses consumer data
 2. `02_merchant_preprocess.ipynb` - preprocesses merchant data
 3. `03_transactions_preprocess.ipynb` - preprocesses transaction data and joins with consumer and merchant data
-4. `04_external_preprocess.ipynb` - preprocesses external dataset
+4. `04_external_preprocess.ipynb` - preprocesses external ABS dataset and merges with BNPL data
+5. `05_external_final_merge.ipynb` - preprocesses external RBA dataset and merges with previous dataset
