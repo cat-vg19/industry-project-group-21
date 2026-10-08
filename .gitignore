@@ -132,12 +132,16 @@ dmypy.json
 data/curated/*
 data/landing/*
 data/tables/*
-data/transactions/*
 data/raw/*
+
+!data/curated/.gitkeep
+!data/landing/.gitkeep
+!data/raw/.gitkeep
+
 data/**/*.crc
 data/**/*.zip
-datacurated/
 
+# python
 scripts/__pycache__/
 scripts/__pycache__/*.pyc
 
