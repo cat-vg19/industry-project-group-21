@@ -8,7 +8,7 @@ Note to groups: Make sure to read the `README.md` located in `./data/README.md` 
 `Nhi Ngo` | 
 `Sarah Ong` |
 `Catherine Van Gerrevink` |
-`Zikra Zuhuree` |
+`Zikra Zuhuree`
 
 # Running the Files
 Files should be run in the order described below.
