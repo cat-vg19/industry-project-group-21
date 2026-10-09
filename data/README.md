@@ -13,12 +13,24 @@ notebook: `04_external_preprocess.ipynb`
 | `SA2_2021_AUST_GDA2020.shp` | SA2 boundaries |
 | `data/curated/df_transactions`, `df_merchants` | Internal data to merge with |
 
-# External Data: SEIFA, RBA and POA data
+# External Data: SEIFA (POA) data
 
 Source URL: https://services-ap1.arcgis.com/ypkPEy1AmwPKGNNv/ArcGIS/rest/services
 
 notebook: `05_external_final_merge.ipynb`
 
-## Purpose: Build macroeconomic-based features
+## Purpose: Build macroeconomic-based features. Imported the POA data which highlighted the postal codes of all the areas within Australia to see which consumers were purchasing what from where. This was in order to establish a demographic base in terms of socio-economic standard and done by mapping all the postcodes onto the merchant dataset to see which transactions took place in what regions.
 
 ### Files:
+| `ABS_Socio_Economic_Indexes_for_Areas_SEIFA_by_2021_POA` | Ranks areas according to relative socio-economic disadvantage by postcode (POA) |
+
+# External Data: RBA and POA data
+
+Source URL: https://www.rba.gov.au/statistics/cash-rate/
+
+notebook: `05_external_final_merge.ipynb`
+
+## Purpose: Imported the RBA data which shows the monthly interest rates across the 2021-2022 calendar year to see how merchants are affected by changing prices and if this affects the consumer base heavily.
+
+### Files:
+| `Cash Rate Target _ RBA.html` | Interest rates and relative change in Australia for a given date |

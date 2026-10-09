@@ -23,10 +23,10 @@ Files should be run in the order described below.
 **3. Fraud labels** (`models/`)
 
 7. `01_Label_merchants.ipynb` - labels merchants as fraud or not fraud (`merchant_fraud_labels.parquet`)
-8. `02_Lablel_consumer.ipynb` - labels consumer transactions as fraud or not fraud (`consumer_fraud_labels.parquet`)
+8. `02_Label_consumer.ipynb` - labels consumer transactions as fraud or not fraud (`consumer_fraud_labels.parquet`)
 9. `03_Create_is_fraud.ipynb` - combines both labels into the `is_fraud` column (`transactions_with_is_fraud_full`)
 10. `04_Model_predict.ipynb` - simple model to predict whether a future transaction may be fraud.
-11. `models/iterative/01_label_mercahnt_iter.ipynb` - iterative and bootstrap self-training for the merchant labels.
+11. `iterative/01_label_merchant_iter.ipynb` - iterative and bootstrap self-training for the merchant labels.
 
 **4. Ranking** (`notebooks/`)
 
@@ -38,19 +38,3 @@ Files should be run in the order described below.
 15. `10_feature_analysis.ipynb` - analyses which features separate merchants and justifies the ones used in the ranking.
 16. `11_final_ranking.ipynb` - builds the final ranking: top 100 merchants overall and top 10 merchants per segment.
 17. `12_summary.ipynb` - summary of the approach, results, issues and limitations.
-
-## External Data: ABS Census 
-
-### notebook: `04_external_preprocess.ipynb`
-
-### Purpose: Build census-based features (such as median household income) that can be joined to customer/merchant/transaction data. Motivation for these features is based on typical trends of BNPL users being younger, or having lower average income. 
-
-### Files 
-| `2021Census_G02_AUST_SA2.csv` | Medians: age, personal/family/household income, rent, mortgage repayments; avg household size; avg persons per bedroom |
-| `2021Census_G04A_AUST_SA2.csv`, `2021Census_G04B_AUST_SA2.csv` | Age by single year (joined on `SA2_CODE_2021`) |
-| `POA_2021_AUST_GDA2020.shp` | Postcode boundaries |
-| `SA2_2021_AUST_GDA2020.shp` | SA2 boundaries |
-| `data/curated/df_transactions`, `df_merchants` | Internal data to merge with |
-
-
-
