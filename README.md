@@ -38,3 +38,4 @@ Files should be run in the order described below.
 15. `10_feature_analysis.ipynb` - analyses which features separate merchants and justifies the ones used in the ranking.
 16. `11_final_ranking.ipynb` - builds the final ranking: top 100 merchants overall and top 10 merchants per segment.
 17. `12_summary.ipynb` - summary of the approach, results, issues and limitations.
+18. `13_supplementary_analysis.ipynb` - additional analysis for tailored recommendations.
