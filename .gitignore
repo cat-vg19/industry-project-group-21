@@ -148,5 +148,8 @@ scripts/__pycache__/*.pyc
 # old code
 deprecate/
 
+# plots
+plots/*.png
+
 # OSX .DS_Store file
 .DS_Store
