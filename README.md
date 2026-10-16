@@ -39,3 +39,6 @@ Files should be run in the order described below.
 16. `11_final_ranking.ipynb` - builds the final ranking: top 100 merchants overall and top 10 merchants per segment.
 17. `12_summary.ipynb` - summary of the approach, results, issues and limitations.
 18. `13_supplementary_analysis.ipynb` - additional analysis for tailored recommendations.
+
+# Privacy and Security Requirement
+All data was stored locally. External datasets are publicly available. Public API keys were used for geographic plots. AI was used in the making of this project. No AI models were given any access to any data.
