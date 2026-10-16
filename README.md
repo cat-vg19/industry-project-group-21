@@ -18,18 +18,17 @@ Files should be run in the order described below.
 3. `03_transactions_preprocess.ipynb` - preprocesses transaction data and joins it with consumer and merchant data
 4. `04_external_preprocess.ipynb` - preprocesses the external ABS datasets and merges them with the BNPL data
 5. `05_external_final_merge.ipynb` - preprocesses the external RBA dataset and merges it with the previous dataset
-6. `06_exploratory_analysis.ipynb` - exploratory analysis and geospatial visualisations
 
-**3. Fraud labels** (`models/`)
+**2. Fraud labels** (`models/`)
 
-7. `01_Label_merchants.ipynb` - labels merchants as fraud or not fraud (`merchant_fraud_labels.parquet`)
-8. `02_Label_consumer.ipynb` - labels consumer transactions as fraud or not fraud (`consumer_fraud_labels.parquet`)
-9. `03_Create_is_fraud.ipynb` - combines both labels into the `is_fraud` column (`transactions_with_is_fraud_full`)
-10. `04_Model_predict.ipynb` - simple model to predict whether a future transaction may be fraud.
-11. `iterative/01_label_merchant_iter.ipynb` - iterative and bootstrap self-training for the merchant labels.
+6. `01_Label_merchants.ipynb` - labels merchants as fraud or not fraud (`merchant_fraud_labels.parquet`)
+7. `02_Label_consumer.ipynb` - labels consumer transactions as fraud or not fraud (`consumer_fraud_labels.parquet`)
+8. `03_Create_is_fraud.ipynb` - combines both labels into the `is_fraud` column (`transactions_with_is_fraud_full`)
+9. `04_Model_predict.ipynb` - simple model to predict whether a future transaction may be fraud.
+10. `iterative/01_label_merchant_iter.ipynb` - iterative and bootstrap self-training for the merchant labels.
 
-**4. Ranking** (`notebooks/`)
-
+**3. Ranking** (`notebooks/`)
+11. `06_exploratory_analysis.ipynb` - exploratory analysis and geospatial visualisations
 12. `07_vol_rankings.ipynb` - first ranking based on take rate, dollar value and number of transactions, with a
     train/test split by date. Its metrics and split dates are reused in `10_feature_analysis`.
 13. `08_start-ranking.ipynb` - first ranking using the `is_essential` feature.
