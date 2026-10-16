@@ -41,4 +41,4 @@ Files should be run in the order described below.
 18. `13_supplementary_analysis.ipynb` - additional analysis for tailored recommendations.
 
 # Privacy and Security Requirement
-All data was stored locally. External datasets are publicly available. Public API keys were used for geographic plots. AI was used in the making of this project. No AI models were given any access to any data.
+All data was stored locally. External datasets are publicly available. Public API keys were used for geographic plots (`06_exploratory_analysis.ipynb` and `13_supplementary_analysis.ipynb`). AI was used in the making of this project. No AI models were given any access to any data.
