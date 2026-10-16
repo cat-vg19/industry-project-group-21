@@ -8,12 +8,16 @@ Shared SparkSession builder.
 import warnings
 from pyspark.sql import SparkSession
 
-
-# Suppress PySpark's pandas >= 3.0 compatibility warning.
 warnings.filterwarnings(
     "ignore",
     message=r"PySpark does not yet fully support pandas >= 3\.0\.0.*",
     category=FutureWarning,
+)
+
+warnings.filterwarnings(
+    "ignore",
+    message=r".*createDataFrame attempted Arrow optimization.*",
+    category=UserWarning,
 )
 
 
@@ -33,5 +37,4 @@ def get_spark(
     )
 
     spark.sparkContext.setLogLevel("WARN")
-
     return spark
